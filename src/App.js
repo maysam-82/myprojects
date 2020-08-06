@@ -1,8 +1,8 @@
 import React from 'react';
-import './app.css';
+import classes from './app.module.scss';
 
 const App = () => {
-	return <div className="app-container">App</div>;
+	return <div className={classes.appContainer}>App</div>;
 };
 
 export default App;
