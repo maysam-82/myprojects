@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+.headerContainer {
+	height: 4rem;
+	background-color: $white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.logoContainer {
+		width: 4rem;
+		.logo {
+			display: block;
+			width: 100%;
+		}
+	}
+}
