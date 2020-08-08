@@ -11,7 +11,7 @@ const App = () => {
 			<Header />
 			<div className={classes.appContent}>
 				<HeroBox />
-				<Slider items={projects} delay={3} />
+				<Slider items={projects} />
 			</div>
 		</div>
 	);

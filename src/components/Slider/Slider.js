@@ -15,21 +15,21 @@ const Slider = ({ items }) => {
 			clearTimeout(timeoutId);
 		};
 	}, [currentIndex, items.length]);
+
+	const renderSliderItems = items.map((item) => {
+		const prevIndex = currentIndex - 1 === 0 ? items.length : currentIndex - 1;
+		return (
+			<SliderItem
+				item={item}
+				key={item.id}
+				isActive={item.id === currentIndex}
+				wasActive={item.id === prevIndex}
+			/>
+		);
+	});
 	return (
 		<div className={classes.sliderContainer}>
-			<ul className={classes.sliderItemContainer}>
-				{items.map((item) => {
-					const prevIndex = currentIndex - 1 === 0 ? items.length : currentIndex - 1;
-					return (
-						<SliderItem
-							item={item}
-							key={item.id}
-							isActive={item.id === currentIndex}
-							wasActive={item.id === prevIndex}
-						/>
-					);
-				})}
-			</ul>
+			<ul className={classes.sliderItemContainer}>{renderSliderItems}</ul>
 		</div>
 	);
 };
