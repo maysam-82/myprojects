@@ -5,4 +5,10 @@
 	font-weight: bold;
 	font-size: 4rem;
 	color: $black;
+	max-width: 85.375rem;
+	width: 100%;
+	margin: 0 auto;
+	.appContent {
+		padding-top: 4rem;
+	}
 }
