@@ -1,3 +1,8 @@
+import flashCardImage from '../assets/img/projects-image/flashcard.png';
+import jeopardyImage from '../assets/img/projects-image/jeopardy.png';
+import storyBookImage from '../assets/img/projects-image/storybook.png';
+import widgetImage from '../assets/img/projects-image/widget.png';
+
 const techList = {
 	REACT: { techId: '101', name: 'React' },
 	TYPESCRIPT: { techId: '102', name: 'Typescript' },
@@ -20,6 +25,7 @@ export const projects = [
 		id: 1,
 		title: 'Jeopardy',
 		description: 'Built Jeopardy game app.',
+		imageUrl: jeopardyImage,
 		url: 'https://maysam-jeopardy.netlify.app',
 		technologies: [
 			techList.REACT,
@@ -35,6 +41,7 @@ export const projects = [
 		id: 2,
 		title: 'Widgets',
 		description: 'Reusable widgets',
+		imageUrl: widgetImage,
 		url: 'https://maysam-widgets.netlify.app/',
 		technologies: [techList.REACT_HOOKS, techList.SEMANTIC_UI],
 		testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
@@ -43,6 +50,7 @@ export const projects = [
 		id: 3,
 		title: 'FlashCard',
 		description: 'Flash Card application',
+		imageUrl: flashCardImage,
 		url: 'https://maysam-flashcard.netlify.app',
 		technologies: [
 			techList.REACT,
@@ -57,6 +65,7 @@ export const projects = [
 		id: 4,
 		title: 'Storybook',
 		description: 'Built reusable components with react storybook',
+		imageUrl: storyBookImage,
 		url: 'https://maysam-react-storybook.netlify.app/',
 		technologies: [techList.REACT, techList.REACT_STORY_BOOK],
 	},
