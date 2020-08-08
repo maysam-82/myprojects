@@ -1,16 +1,23 @@
 @import '../../styles/variables.scss';
 .headerContainer {
-	height: 4rem;
+	height: 3rem;
+	border-bottom: 0.0625rem solid $border;
 	background-color: $white;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding: 0 0.625rem;
+	h3 {
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+	}
 	.logoContainer {
-		width: 4rem;
+		width: 3rem;
 		.logo {
 			display: block;
 			width: 100%;
