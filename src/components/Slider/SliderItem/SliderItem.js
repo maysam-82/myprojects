@@ -7,11 +7,17 @@ const SliderItem = ({ item, isActive, wasActive }) => {
 	if (isActive) sliderItemClass = [...sliderItemClass, classes.sliderItemActive];
 	if (wasActive) sliderItemClass = [...sliderItemClass, classes.sliderItemWasActive];
 
-	const renderTestingLibraries = testingLibraries.map(({ testId, testLibraryName }) => (
-		<li className={classes.item} key={testId}>
-			{testLibraryName}
-		</li>
-	));
+	const renderTestingLibraries = testingLibraries ? (
+		<ul className={classes.items}>
+			{testingLibraries.map(({ testId, testLibraryName }) => (
+				<li className={classes.item} key={testId}>
+					{testLibraryName}
+				</li>
+			))}
+		</ul>
+	) : (
+		<div className={classes.items}>-</div>
+	);
 	const renderTechnologies = technologies.map(({ techId, name }) => (
 		<li className={classes.item} key={techId}>
 			{name}
@@ -25,11 +31,7 @@ const SliderItem = ({ item, isActive, wasActive }) => {
 				<div className={classes.itemTitle}>Technologies:</div>
 				<ul className={classes.items}>{renderTechnologies}</ul>
 				<div className={classes.itemTitle}>Testing libraries:</div>
-				{testingLibraries ? (
-					<ul className={classes.items}>{renderTestingLibraries}</ul>
-				) : (
-					<div className={classes.items}>-</div>
-				)}
+				{renderTestingLibraries}
 
 				<div className={classes.itemTitle}>URL:</div>
 				<a href={url}>{url}</a>
