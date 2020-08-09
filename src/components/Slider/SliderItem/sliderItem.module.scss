@@ -79,3 +79,9 @@
 .sliderItemWasActive {
 	left: -100%;
 }
+
+@media screen and (max-width: $break-large) {
+	.sliderItem {
+		display: none;
+	}
+}

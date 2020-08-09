@@ -53,3 +53,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: $break-large) {
+	.footerContainer {
+		.projectsLink {
+			display: none;
+		}
+		.profile {
+			width: 100%;
+		}
+	}
+}
