@@ -1,7 +1,9 @@
 import React from 'react';
 import classes from './app.module.scss';
-import Header from './components/Header/Header';
-import HeroBox from './components/HeroBox/HeroBox';
+import Header from './components/Header';
+import HeroBox from './components/HeroBox';
+import Slider from './components/Slider';
+import { projects } from './data/projects';
 
 const App = () => {
 	return (
@@ -9,6 +11,7 @@ const App = () => {
 			<Header />
 			<div className={classes.appContent}>
 				<HeroBox />
+				<Slider items={projects} />
 			</div>
 		</div>
 	);
