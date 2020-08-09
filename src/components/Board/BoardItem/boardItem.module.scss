@@ -1,0 +1,58 @@
+@import '../../../styles/variables.scss';
+.boardItem {
+	width: calc(50% - 0.3125rem);
+	background-color: $white;
+	color: $black;
+	margin-bottom: 0.625rem;
+	padding: 0.625rem;
+
+	h4 {
+		margin: 0;
+		width: 100%;
+		text-align: left;
+		border-bottom: 0.0625rem solid $border;
+		padding: 0.625rem 0;
+	}
+	.itemTitle {
+		font-size: 1rem;
+		font-weight: bold;
+		margin-top: 0.625rem;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.itemTitleDescription {
+		font-size: 0.875rem;
+		color: $red;
+	}
+	.items {
+		padding: 0.625rem 0;
+		margin: 0;
+		width: 100%;
+		list-style: none;
+		font-size: 0.875rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		color: $red;
+		.item {
+			width: 50%;
+		}
+		border-bottom: 0.0625rem solid $border;
+	}
+
+	a {
+		font-size: 0.875rem;
+		text-decoration: none;
+		font-weight: bold;
+		display: block;
+		color: $red;
+	}
+}
+
+@media screen and (max-width: $break-medium) {
+	.boardItem {
+		width: calc(100%);
+	}
+}

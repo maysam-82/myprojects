@@ -11,7 +11,7 @@
 	top: 0;
 	left: 0;
 	padding: 0 0.625rem;
-	z-index: 9999;
+	z-index: $max-z-index;
 	h3 {
 		font-size: 1rem;
 		margin: 0;
@@ -22,6 +22,16 @@
 		.logo {
 			display: block;
 			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: $break-medium) {
+	.headerContainer {
+		h3 {
+			&:last-child {
+				display: none;
+			}
 		}
 	}
 }

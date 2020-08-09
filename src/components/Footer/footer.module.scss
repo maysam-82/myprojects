@@ -56,7 +56,11 @@
 
 @media screen and (max-width: $break-large) {
 	.footerContainer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
 		height: 4rem;
+		z-index: $max-z-index;
 		.projectsLink {
 			display: none;
 		}
