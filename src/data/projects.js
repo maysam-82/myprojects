@@ -42,7 +42,7 @@ export const projects = [
 		title: 'Widgets',
 		description: 'Reusable widgets',
 		imageUrl: widgetImage,
-		url: 'https://maysam-widgets.netlify.app/',
+		url: 'https://maysam-widgets.netlify.app',
 		technologies: [techList.REACT_HOOKS, techList.SEMANTIC_UI],
 		testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
 	},
@@ -66,7 +66,7 @@ export const projects = [
 		title: 'Storybook',
 		description: 'Built reusable components with react storybook',
 		imageUrl: storyBookImage,
-		url: 'https://maysam-react-storybook.netlify.app/',
+		url: 'https://maysam-react-storybook.netlify.app',
 		technologies: [techList.REACT, techList.REACT_STORY_BOOK],
 	},
 ];
