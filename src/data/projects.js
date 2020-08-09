@@ -18,7 +18,7 @@ const techList = {
 	SASS_MODULE: { techId: '110', name: 'sass module' },
 	GOOGLE_FIREBASE: { techId: '111', name: 'google firebase' },
 	REDUX_PERSIST: { techId: '112', name: 'redux-persist' },
-	RESELECT: { techId: '112', name: 'reselect' },
+	RESELECT: { techId: '113', name: 'reselect' },
 };
 
 const testLibraryList = {
