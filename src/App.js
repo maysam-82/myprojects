@@ -4,7 +4,8 @@ import Header from './components/Header';
 import HeroBox from './components/HeroBox';
 import Slider from './components/Slider';
 import { projects } from './data/projects';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
+import Board from './components/Board';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<div className={classes.appContent}>
 				<HeroBox />
 				<Slider items={projects} />
+				<Board items={projects} />
 			</div>
 			<Footer items={projects} />
 		</div>

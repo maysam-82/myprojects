@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+.boardContainer {
+	width: 100%;
+	padding: 0 0.625rem;
+	margin: 0.625rem 0;
+
+	.boardItems {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: $break-large) {
+	.boardContainer {
+		display: none;
+	}
+}
