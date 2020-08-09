@@ -42,6 +42,7 @@
 		.itemTitleDescription {
 			font-weight: normal;
 			font-size: 1rem;
+			color: $red;
 		}
 		.items {
 			padding: 0;
@@ -53,6 +54,8 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
+			font-weight: normal;
+			color: $red;
 			.item {
 				width: 50%;
 			}

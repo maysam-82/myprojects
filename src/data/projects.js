@@ -2,6 +2,8 @@ import flashCardImage from '../assets/img/projects-image/flashcard.png';
 import jeopardyImage from '../assets/img/projects-image/jeopardy.png';
 import storyBookImage from '../assets/img/projects-image/storybook.png';
 import widgetImage from '../assets/img/projects-image/widget.png';
+import noteToSelfImage from '../assets/img/projects-image/note-to-self.png';
+import eCommerceImage from '../assets/img/projects-image/e-commerce.png';
 
 const techList = {
 	REACT: { techId: '101', name: 'React' },
@@ -13,6 +15,10 @@ const techList = {
 	SEMANTIC_UI: { techId: '107', name: 'semantic-ui' },
 	REACT_ROUTER: { techId: '108', name: 'react-router-dom' },
 	REACT_STORY_BOOK: { techId: '109', name: 'storybook' },
+	SASS_MODULE: { techId: '110', name: 'sass module' },
+	GOOGLE_FIREBASE: { techId: '111', name: 'google firebase' },
+	REDUX_PERSIST: { techId: '112', name: 'redux-persist' },
+	RESELECT: { techId: '112', name: 'reselect' },
 };
 
 const testLibraryList = {
@@ -68,5 +74,31 @@ export const projects = [
 		imageUrl: storyBookImage,
 		url: 'https://maysam-react-storybook.netlify.app',
 		technologies: [techList.REACT, techList.REACT_STORY_BOOK],
+	},
+	{
+		id: 5,
+		title: 'E-commerce (Code)',
+		description: 'An e-commerce project',
+		imageUrl: eCommerceImage,
+		url: 'https://github.com/maysam-82/sample-e-commerce-project',
+		technologies: [
+			techList.REACT,
+			techList.REDUX,
+			techList.REDUX_THUNK,
+			techList.REDUX_PERSIST,
+			techList.RESELECT,
+			techList.REACT_ROUTER,
+			techList.SASS_MODULE,
+			techList.GOOGLE_FIREBASE,
+		],
+	},
+	{
+		id: 6,
+		title: 'Note To Self',
+		description: 'Note To Self project',
+		imageUrl: noteToSelfImage,
+		url: 'https://maysam-note-to-self.netlify.app/',
+		technologies: [techList.REACT, techList.TYPESCRIPT, techList.REACT_BOOTSTRAP],
+		testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
 	},
 ];
