@@ -4,6 +4,7 @@ import storyBookImage from '../assets/img/projects-image/storybook.png';
 import widgetImage from '../assets/img/projects-image/widget.png';
 import noteToSelfImage from '../assets/img/projects-image/note-to-self.png';
 import eCommerceImage from '../assets/img/projects-image/e-commerce.png';
+import graphqlImage from '../assets/img/projects-image/graphql.png';
 
 const techList = {
     REACT: { techId: '101', name: 'React' },
@@ -115,7 +116,7 @@ export const projects = [
         id: 7,
         title: 'Book Finder/Adder',
         description: 'Finding and Adding Books',
-        imageUrl: noteToSelfImage,
+        imageUrl: graphqlImage,
         url: 'https://maysam-graphql.netlify.app/',
         technologies: [
             techList.REACT,
