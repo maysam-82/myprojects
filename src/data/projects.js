@@ -5,24 +5,26 @@ import widgetImage from '../assets/img/projects-image/widget.png';
 import noteToSelfImage from '../assets/img/projects-image/note-to-self.png';
 import eCommerceImage from '../assets/img/projects-image/e-commerce.png';
 import graphqlImage from '../assets/img/projects-image/graphql.png';
+import burgeryImage from '../assets/img/projects-image/burgery.png';
 
 const techList = {
     REACT: { techId: '101', name: 'React' },
     TYPESCRIPT: { techId: '102', name: 'Typescript' },
-    REDUX: { techId: '103', name: 'redux' },
+    REDUX: { techId: '103', name: 'Redux' },
     REDUX_THUNK: { techId: '104', name: 'redux-thunk' },
     REACT_BOOTSTRAP: { techId: '105', name: 'react-bootstrap' },
     REACT_HOOKS: { techId: '106', name: 'React/Hooks' },
-    SEMANTIC_UI: { techId: '107', name: 'semantic-ui' },
+    SEMANTIC_UI: { techId: '107', name: 'Semantic-ui' },
     REACT_ROUTER: { techId: '108', name: 'react-router-dom' },
-    REACT_STORY_BOOK: { techId: '109', name: 'storybook' },
-    SASS_MODULE: { techId: '110', name: 'sass module' },
-    GOOGLE_FIREBASE: { techId: '111', name: 'google firebase' },
+    REACT_STORY_BOOK: { techId: '109', name: 'Storybook' },
+    SASS_MODULE: { techId: '110', name: 'SASS module' },
+    GOOGLE_FIREBASE: { techId: '111', name: 'Google Firebase' },
     REDUX_PERSIST: { techId: '112', name: 'redux-persist' },
     RESELECT: { techId: '113', name: 'reselect' },
     GRAPHQL: { techId: '114', name: 'Graphql' },
     APOLLO: { techId: '115', name: 'Apollo' },
     EXPRESS: { techId: '116', name: 'Express' },
+    AXIOS: { techId: '117', name: 'Axios' },
 };
 
 const testLibraryList = {
@@ -34,6 +36,23 @@ const testLibraryList = {
     },
 };
 export const projects = [
+    {
+        id: 0,
+        title: 'Sample Burgery',
+        description: 'Built Sample Burger App.',
+        imageUrl: burgeryImage,
+        url: 'https://maysam-burgery.netlify.app/',
+        technologies: [
+            techList.REACT,
+            techList.TYPESCRIPT,
+            techList.REDUX,
+            techList.REDUX_THUNK,
+            techList.REACT_ROUTER,
+            techList.GOOGLE_FIREBASE,
+            techList.AXIOS,
+            techList.SASS_MODULE,
+        ],
+    },
     {
         id: 1,
         title: 'Jeopardy',
