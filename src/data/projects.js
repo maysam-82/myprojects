@@ -1,12 +1,3 @@
-import flashCardImage from '../assets/img/projects-image/flashcard.png';
-import jeopardyImage from '../assets/img/projects-image/jeopardy.png';
-import storyBookImage from '../assets/img/projects-image/storybook.png';
-import widgetImage from '../assets/img/projects-image/widget.png';
-import noteToSelfImage from '../assets/img/projects-image/note-to-self.png';
-import eCommerceImage from '../assets/img/projects-image/e-commerce.png';
-import graphqlImage from '../assets/img/projects-image/graphql.png';
-import burgeryImage from '../assets/img/projects-image/burgery.png';
-
 const techList = {
     REACT: { techId: '101', name: 'React' },
     TYPESCRIPT: { techId: '102', name: 'Typescript' },
@@ -40,7 +31,6 @@ export const projects = [
         id: 0,
         title: 'Sample Burgery',
         description: 'Built Sample Burger App.',
-        imageUrl: burgeryImage,
         url: 'https://maysam-burgery.netlify.app/',
         technologies: [
             techList.REACT,
@@ -57,7 +47,6 @@ export const projects = [
         id: 1,
         title: 'Jeopardy',
         description: 'Built Jeopardy game app.',
-        imageUrl: jeopardyImage,
         url: 'https://maysam-jeopardy.netlify.app',
         technologies: [
             techList.REACT,
@@ -73,7 +62,6 @@ export const projects = [
         id: 2,
         title: 'Widgets',
         description: 'Reusable widgets',
-        imageUrl: widgetImage,
         url: 'https://maysam-widgets.netlify.app',
         technologies: [techList.REACT_HOOKS, techList.SEMANTIC_UI],
         testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
@@ -82,7 +70,6 @@ export const projects = [
         id: 3,
         title: 'FlashCard',
         description: 'Flash Card application',
-        imageUrl: flashCardImage,
         url: 'https://maysam-flashcard.netlify.app',
         technologies: [
             techList.REACT,
@@ -97,7 +84,6 @@ export const projects = [
         id: 4,
         title: 'Storybook',
         description: 'Built reusable components with react storybook',
-        imageUrl: storyBookImage,
         url: 'https://maysam-react-storybook.netlify.app',
         technologies: [techList.REACT, techList.REACT_STORY_BOOK],
     },
@@ -105,7 +91,6 @@ export const projects = [
         id: 5,
         title: 'E-commerce (Code)',
         description: 'An e-commerce project',
-        imageUrl: eCommerceImage,
         url: 'https://github.com/maysam-82/sample-e-commerce-project',
         technologies: [
             techList.REACT,
@@ -122,7 +107,6 @@ export const projects = [
         id: 6,
         title: 'Note To Self',
         description: 'Note To Self project',
-        imageUrl: noteToSelfImage,
         url: 'https://maysam-note-to-self.netlify.app/',
         technologies: [
             techList.REACT,
@@ -135,7 +119,6 @@ export const projects = [
         id: 7,
         title: 'Book Finder/Adder',
         description: 'Finding and Adding Books',
-        imageUrl: graphqlImage,
         url: 'https://maysam-graphql.netlify.app/',
         technologies: [
             techList.REACT,
