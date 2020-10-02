@@ -1,23 +1,35 @@
 import React from 'react';
-import classes from './app.module.scss';
 import Header from './components/Header';
 import HeroBox from './components/HeroBox';
-// import Slider from './components/Slider';
 import { projects } from './data/projects';
 import Footer from './components/Footer';
 import Board from './components/Board';
+import theme from './styles/theme';
+import { ThemeProvider, Container, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+    appContainer: {
+        ...theme.mixins.toolbar,
+        marginBottom: '0.625rem',
+    },
+}));
 
 const App = () => {
+    const classes = useStyles();
     return (
-        <div className={classes.appContainer}>
+        <ThemeProvider theme={theme}>
             <Header />
-            <div className={classes.appContent}>
-                <HeroBox />
-                {/*TODO: Complete Slider <Slider items={projects} /> */}
-                <Board items={projects} />
-            </div>
-            <Footer items={projects} />
-        </div>
+            <div className={classes.appContainer} />
+            <Container maxWidth="lg">
+                <div className={classes.appContent} />
+                <div>
+                    <HeroBox />
+                    {/*TODO: Complete Slider <Slider items={projects} /> */}
+                    <Board items={projects} />
+                </div>
+                <Footer items={projects} />
+            </Container>
+        </ThemeProvider>
     );
 };
 
