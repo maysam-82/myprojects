@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 
 const primary = '#73d216';
 const secondary = '#3465a4';
@@ -33,13 +34,17 @@ const theme = createMuiTheme({
                     fontSize: '16px',
                 },
                 body: {
-                    backgroundColor: body,
+                    backgroundColor: fade(secondary, 0.1),
                 },
             },
         },
     },
-    typography: {
-        fontFamily: ['Courgette', 'cursive'],
+    // typography: {
+    //     fontFamily: ['Courgette', 'cursive'],
+    // },
+    border: {
+        border: '0.0625rem solid',
+        borderColor: black,
     },
 });
 
