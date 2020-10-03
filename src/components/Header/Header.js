@@ -12,7 +12,7 @@ import ElevationScroll from '../ElevationScroll';
 const useStyles = makeStyles(
     ({
         palette: {
-            common: { white, black },
+            common: { white, secondary },
         },
         breakpoints,
     }) => ({
@@ -23,14 +23,14 @@ const useStyles = makeStyles(
             fontSize: '1rem',
             margin: 0,
             padding: 0,
-            color: black,
+            color: secondary,
             fontWeight: 700,
         },
         headerDescription: {
             fontSize: '1rem',
             margin: 0,
             padding: 0,
-            color: black,
+            color: secondary,
             display: 'none',
             marginLeft: 'auto',
             fontWeight: 700,
