@@ -1,6 +1,8 @@
-import { makeStyles, Paper, Typography } from '@material-ui/core';
-import heroImage from '../../assets/img/hero.png';
 import React from 'react';
+import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
+import heroImage from '../../assets/img/hero.png';
+import animationData from '../../assets/animation/json/logo.json';
+import Logo from '../Logo/Logo';
 
 const useStyles = makeStyles(
     ({
@@ -31,17 +33,37 @@ const useStyles = makeStyles(
             backgroundColor: body,
             opacity: 0.6,
             borderRadius: borderRadius,
+            textAlign: 'center',
+        },
+        logoContainer: {
+            marginTop: '1rem',
         },
     })
 );
 
 const HeroBox = () => {
     const classes = useStyles();
+
     return (
         <Paper className={classes.heroBoxContainer}>
-            <Typography variant="h4" className={classes.heroBoxTitle}>
-                Welcome to Maysam Abolghasemi's Dev. Website
-            </Typography>
+            <Grid container direction="column" alignItems="center">
+                <Grid item md={12}>
+                    <Typography variant="h4" className={classes.heroBoxTitle}>
+                        Welcome to Maysam Abolghasemi's Dev. Website
+                    </Typography>
+                </Grid>
+                <Grid item className={classes.logoContainer} md={12}>
+                    <Logo
+                        width={64}
+                        height={64}
+                        hasAutoPlay={true}
+                        hasLoop={false}
+                        isPaused={false}
+                        isStopped={false}
+                        animationData={animationData}
+                    />
+                </Grid>
+            </Grid>
         </Paper>
     );
 };
