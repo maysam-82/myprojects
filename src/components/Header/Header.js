@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/img/logo_svg.svg';
 import {
     AppBar,
     Toolbar,
@@ -38,11 +37,6 @@ const useStyles = makeStyles(
                 display: 'block',
             },
         },
-        logoContainer: {
-            marginLeft: 'auto',
-            width: '3rem',
-        },
-        logo: { display: 'block', width: '100%' },
     })
 );
 
@@ -57,13 +51,6 @@ export default function Header(props) {
                         <Typography className={classes.headerTitle}>
                             Maysam Abolghasemi
                         </Typography>
-                        <div className={classes.logoContainer}>
-                            <img
-                                className={classes.logo}
-                                src={logo}
-                                alt="projects-logo"
-                            />
-                        </div>
                         <Typography className={classes.headerDescription}>
                             Front End Developer
                         </Typography>

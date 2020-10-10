@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     Chip,
     Grid,
@@ -5,10 +6,12 @@ import {
     List,
     ListItem,
     makeStyles,
+    Paper,
+    Typography,
 } from '@material-ui/core';
-import FaceIcon from '@material-ui/icons/Face';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import React from 'react';
+import animationData from '../../assets/animation/json/logo.json';
+import Logo from '../Logo/Logo';
 
 const useStyles = makeStyles((theme) => {
     const {
@@ -23,8 +26,6 @@ const useStyles = makeStyles((theme) => {
             padding: '1rem',
             backgroundColor: secondary,
             width: '100%',
-            display: 'flex',
-            justifyContent: 'center',
             position: 'fixed',
             top: 'auto',
             bottom: 0,
@@ -44,10 +45,20 @@ const useStyles = makeStyles((theme) => {
             },
         },
         listItemGithub: {
-            color: secondary,
+            color: theme.palette.common.white,
+            fontWeight: 700,
+            textDecoration: 'none',
             fontSize: '1.5rem',
-            backgroundColor: white,
+            height: '3rem',
+            display: 'flex',
+            alignItems: 'center',
+            borderRadius: theme.shape.borderRadius,
+            textAlign: 'left',
+            [theme.breakpoints.up('md')]: {
+                textAlign: 'center',
+            },
         },
+
         profile: {
             height: '100%',
             display: 'flex',
@@ -86,6 +97,23 @@ const useStyles = makeStyles((theme) => {
             color: white,
             borderColor: white,
         },
+        logoAnimation: {
+            display: 'flex',
+            justifyContent: 'flex-end',
+
+            [theme.breakpoints.up('md')]: {
+                display: 'none',
+            },
+        },
+        githubLinkContainer: {
+            display: 'flex',
+            justifyContent: 'flex-start',
+            [theme.breakpoints.up('md')]: {
+                justifyContent: 'center',
+            },
+
+            alignItems: 'center',
+        },
     };
 });
 
@@ -110,22 +138,39 @@ const Footer = ({ items }) => {
     ));
     return (
         <footer className={classes.footerContainer}>
-            <Grid item md={3} xs={12}>
-                <Link
-                    href="https://github.com/maysam-82"
-                    className={classes.profile}
-                    underline="none"
+            <Grid container justify="center">
+                <Grid
+                    item
+                    md={3}
+                    xs={9}
+                    className={classes.githubLinkContainer}
                 >
-                    <Chip
-                        label="My Github"
-                        icon={<FaceIcon className={classes.iconGithub} />}
-                        clickable
+                    <Typography
+                        component={'a'}
+                        href="https://github.com/maysam-82"
                         className={classes.listItemGithub}
-                    />
-                </Link>
-            </Grid>
-            <Grid item md={9} className={classes.projectLinksContainer}>
-                <List className={classes.projectsLink}>{renderItemsLink}</List>
+                    >
+                        My Github Link
+                    </Typography>
+                </Grid>
+                <Grid item xs={3} className={classes.logoAnimation}>
+                    <Paper elevation={0}>
+                        <Logo
+                            width={64}
+                            height={64}
+                            hasAutoPlay={true}
+                            hasLoop={false}
+                            isPaused={false}
+                            isStopped={false}
+                            animationData={animationData}
+                        />
+                    </Paper>
+                </Grid>
+                <Grid item md={9} className={classes.projectLinksContainer}>
+                    <List className={classes.projectsLink}>
+                        {renderItemsLink}
+                    </List>
+                </Grid>
             </Grid>
         </footer>
     );
