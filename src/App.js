@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '0.625rem',
     },
     appBottomSpace: {
-        height: '4rem',
+        height: '6rem',
         [theme.breakpoints.up('md')]: {
             height: 0,
         },
