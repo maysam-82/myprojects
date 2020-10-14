@@ -72,9 +72,9 @@ const BoardItem = ({ item }) => {
     const { title, url, technologies } = item || {};
     const classes = useStyles();
 
-    const renderTechnologies = technologies.map(({ techId, name }) => (
-        <ListItem divider key={techId}>
-            {name}
+    const renderTechnologies = technologies.map(({ techId, name }, index) => (
+        <ListItem divider={index !== technologies.length - 1} key={techId}>
+            <Typography variant="subtitle1">{name}</Typography>
         </ListItem>
     ));
 
