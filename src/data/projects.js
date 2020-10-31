@@ -45,21 +45,6 @@ export const projects = [
     },
     {
         id: 1,
-        title: 'Jeopardy',
-        description: 'Built Jeopardy game app.',
-        url: 'https://maysam-jeopardy.netlify.app',
-        technologies: [
-            techList.REACT,
-            techList.TYPESCRIPT,
-            techList.REDUX,
-            techList.REDUX_THUNK,
-            techList.REACT_ROUTER,
-            techList.REACT_BOOTSTRAP,
-        ],
-        testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
-    },
-    {
-        id: 2,
         title: 'Widgets',
         description: 'Reusable widgets',
         url: 'https://maysam-widgets.netlify.app',
@@ -67,7 +52,7 @@ export const projects = [
         testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
     },
     {
-        id: 3,
+        id: 2,
         title: 'FlashCard',
         description: 'Flash Card application',
         url: 'https://maysam-flashcard.netlify.app',
@@ -81,14 +66,14 @@ export const projects = [
         testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
     },
     {
-        id: 4,
+        id: 3,
         title: 'Storybook',
         description: 'Built reusable components with react storybook',
         url: 'https://maysam-react-storybook.netlify.app',
         technologies: [techList.REACT, techList.REACT_STORY_BOOK],
     },
     {
-        id: 5,
+        id: 4,
         title: 'E-commerce (Code)',
         description: 'An e-commerce project',
         url: 'https://github.com/maysam-82/sample-e-commerce-project',
@@ -104,7 +89,7 @@ export const projects = [
         ],
     },
     {
-        id: 6,
+        id: 5,
         title: 'Note To Self',
         description: 'Note To Self project',
         url: 'https://maysam-note-to-self.netlify.app/',
@@ -116,7 +101,7 @@ export const projects = [
         testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
     },
     {
-        id: 7,
+        id: 6,
         title: 'Book Finder/Adder',
         description: 'Finding and Adding Books',
         url: 'https://maysam-graphql.netlify.app/',
