@@ -16,6 +16,7 @@ const techList = {
     APOLLO: { techId: '115', name: 'Apollo' },
     EXPRESS: { techId: '116', name: 'Express' },
     AXIOS: { techId: '117', name: 'Axios' },
+    REACT_JSS: { techId: '118', name: 'react-jss' },
 };
 
 const testLibraryList = {
@@ -48,7 +49,7 @@ export const projects = [
         title: 'Widgets',
         description: 'Reusable widgets',
         url: 'https://maysam-widgets.netlify.app',
-        technologies: [techList.REACT_HOOKS, techList.SEMANTIC_UI],
+        technologies: [techList.REACT_HOOKS, techList.SEMANTIC_UI, techList.REACT_JSS],
         testingLibraries: [testLibraryList.JEST, testLibraryList.ENZYME],
     },
     {
